@@ -7,11 +7,11 @@
 
 /// Requisitos recomendados para correr el juego: 40 de ram 320 mhz
 
-//FunciÛn global para detecciÛn de colisiones
+//Funci√≥n global para detecci√≥n de colisiones
 #define checar_colision(x1,y1,w1,h1,x2,y2,w2,h2) (!( ((x1)>=(x2)+(w2)) || ((x2)>=(x1)+(w1)) || ((y1)>=(y2)+(h2)) || ((y2)>=(y1)+(h1)) ))
 
 //Constantes globales
-    //ResoluciÛn de la pantalla de juego
+    //Resoluci√≥n de la pantalla de juego
 #define ANCHURA_VENTANA 800
 #define ALTURA_VENTANA 600
 
@@ -272,7 +272,7 @@ void cinemato(){
             
        clear_bitmap(buffer);
            draw_sprite(buffer, recursos[26].dat,0,0);
-         textprintf_ex(buffer, chiller,200,160, VERDE, -1, "---HAS DERROTADO AL PODEROSO SOLDADO ESPA—OL!!--- (:D)");
+         textprintf_ex(buffer, chiller,200,160, VERDE, -1, "---HAS DERROTADO AL PODEROSO SOLDADO ESPA√ëOL!!--- (:D)");
          textprintf_ex(buffer, chiller,100,260, BLANCO, -1, "\"Y al final, Cuauhpopoca se ha alzado por sobre el experimentado soldado espanol.\"");
          textprintf_ex(buffer, chiller,10,280, BLANCO, -1, "Eres un heroe entre los Aztecas, todo un perro entre los compadres, y todo un papi entre las nenas");
          textprintf_ex(buffer, chiller,300,310, AMARILLO, -1, "|Puntuacion total: %i |",temp);
@@ -752,7 +752,7 @@ if(caida==1)
 
          
           
-//Enemigo 1, colifion con enemigo, daÒo a enemigo y vida del enemigo efpaÒol
+//Enemigo 1, colifion con enemigo, da√±o a enemigo y vida del enemigo efpa√±ol
 if(enemigo_coli>0){
        if((enemigo_coli%2) == 0)          
    draw_sprite_h_flip(buffer, recursos[19].dat,731,492);
@@ -830,8 +830,8 @@ if(iniciado==3){
       ///////////////////Nivel 2////////////////////// 
       draw_sprite(buffer, recursos[27].dat,limitePant,0);///pintando escenario
       if(limitePant==-800){// Si pantalla 2
-      //ColPant = ColisiÛn alguna en la pantalla que se est· mostrando
-//Pintando ·rbol        
+      //ColPant = Colisi√≥n alguna en la pantalla que se est√° mostrando
+//Pintando √°rbol        
 draw_sprite(buffer, recursos[34].dat,360,190); }
       
       if(temp2==0){
@@ -1224,7 +1224,7 @@ if(retornococodrilo==1){
                        }                                             
 colPant1=colPant1+(checar_colision(movx,movy,35,88,cocodrilox,cocodriloy,60,25));
    
-//Rutinas de movimiento de PiraÒa
+//Rutinas de movimiento de Pira√±a
      
 if(retornopirana==0)
 draw_sprite(buffer, recursos[30].dat,piranax,piranay);
@@ -1280,7 +1280,7 @@ if(colPant1!=0){
   }
   
   
-if(limitePant==-800){//                    pantalla 2 y ·rbol 
+if(limitePant==-800){//                    pantalla 2 y √°rbol 
    
     if(retornococodrilo2==0){
     if(temp3==0){
@@ -1326,7 +1326,7 @@ circlefill(buffer, 320, 20, 13, VERDE);
 draw_sprite(buffer, recursos[33].dat,310,10);
 textprintf_ex(buffer, chiller,317,35, VERDE, -1, "P");
 
-if(colpiedra1!=0){//se revisa si la piedra colisionÛ con el ·rbol, si sÌ, entonces remueve la piedra, like you removed me from your life H
+if(colpiedra1!=0){//se revisa si la piedra colision√≥ con el √°rbol, si s√≠, entonces remueve la piedra, like you removed me from your life H
 piedratirada=0;
 if(piedraty<615){
 piedraty=piedraty+20;
@@ -1363,7 +1363,7 @@ flipiedra=0;
                                                                                 
 //Rutinas de comportamiento del tronco 
 if(troncoarriba==1){
-line(buffer, 700, 0, troncox+83, troncoy, VERDEF);   //linea de la que pender· el tronco, like my heart hangs off your blind will "Jsick"
+line(buffer, 700, 0, troncox+83, troncoy, VERDEF);   //linea de la que pender√° el tronco, like my heart hangs off your blind will "Jsick"
 line(buffer, 702, 0, troncox+85, troncoy+2, VERDEF);}
 else
 {
@@ -1504,7 +1504,7 @@ blit(buffer,screen, 0,0,0,0,ANCHURA_VENTANA, ALTURA_VENTANA);
 clear_bitmap(buffer); 
 
 /*And now the final frame 
-Love is a losing game (H yo a hooker, but i swear i loved u) */
+Love is a losing game (eish yo a hooker, but i swear i loved u) */
 
 rest(26);
 }while(!fin_juego);
